@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Xtrec</title>
+    <meta name="description" content="Explore Xtrec's product lines: Carbon Measurement Platform, Smart Ambient Displays, and Sports Performance Devices.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='28' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='20' cy='28' r='4' fill='%23002E5D'/%3E%3Cline x1='12' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3Cline x1='28' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 140 40" width="140" height="40">
+                    <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                    <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                    <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="platform.html">Platform</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Join Pilot</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="products.html">Products</a>
+        <a href="platform.html">Platform</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px; width: 100%;">Join Pilot Programme</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <p class="label">Our Products</p>
+            <h1 class="heading-xl max-w-4xl mx-auto">Three focused product lines, one shared platform</h1>
+            <p class="text-lg max-w-2xl mx-auto">Each product addresses a real need with practical, affordable technology. All built on Xtrec's shared IoT platform.</p>
+        </div>
+    </section>
+
+    <!-- Carbon Platform Section -->
+    <section id="carbon" class="product-section">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-12">
+                <div>
+                    <span class="badge mb-4">Coming soon</span>
+                    <h2 class="heading-lg">Carbon Measurement Platform</h2>
+                    <p class="text-lg mb-6" style="color: var(--primary); font-weight: 500;">Automated emissions reporting for SMEs</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div>
+                            <h4 class="heading-md" style="font-size: 18px;">The Problem</h4>
+                            <p class="card-text">Small and medium businesses struggle with carbon reporting. Existing solutions are expensive, complex, or require manual data entry that's error-prone and time-consuming.</p>
+                        </div>
+                        <div>
+                            <h4 class="heading-md" style="font-size: 18px;">Our Solution</h4>
+                            <p class="card-text">Our platform connects directly to accounting software and smart energy sensors to automatically calculate Scope 1, 2 and 3 emissions — giving SMEs accurate reporting without the complexity.</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Automated data collection from financial systems
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Real-time energy monitoring via smart sensors
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Scope 1, 2 & 3 emissions calculation
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Dashboard and reporting for compliance
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Affordable pricing for small businesses
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="btn btn-primary">
+                        Join the pilot
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+                
+                <div class="product-graphic carbon">
+                    <svg viewBox="0 0 200 200" width="200" height="200">
+                        <circle cx="100" cy="100" r="60" fill="none" stroke="#002E5D" stroke-width="2" stroke-dasharray="8 4" opacity="0.4"/>
+                        <circle cx="100" cy="100" r="40" fill="none" stroke="#002E5D" stroke-width="1.5" opacity="0.3"/>
+                        <circle cx="100" cy="40" r="8" fill="#002E5D" opacity="0.7"/>
+                        <circle cx="152" cy="130" r="8" fill="#002E5D" opacity="0.7"/>
+                        <circle cx="48" cy="130" r="8" fill="#002E5D" opacity="0.7"/>
+                        <line x1="100" y1="48" x2="100" y2="100" stroke="#002E5D" stroke-width="1.5" opacity="0.4"/>
+                        <line x1="144" y1="126" x2="100" y2="100" stroke="#002E5D" stroke-width="1.5" opacity="0.4"/>
+                        <line x1="56" y1="126" x2="100" y2="100" stroke="#002E5D" stroke-width="1.5" opacity="0.4"/>
+                        <text x="100" y="95" text-anchor="middle" font-family="Outfit" font-size="14" fill="#002E5D" font-weight="600">Carbon</text>
+                        <text x="100" y="112" text-anchor="middle" font-family="Outfit" font-size="14" fill="#002E5D" font-weight="600">Tracking</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambient Displays Section -->
+    <section id="displays" class="product-section section-alt">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-12">
+                <div class="md:order-2">
+                    <span class="badge mb-4">Pilot users welcome</span>
+                    <h2 class="heading-lg">Smart Ambient Displays</h2>
+                    <p class="text-lg mb-6" style="color: var(--primary); font-weight: 500;">Calm information at a glance</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div>
+                            <h4 class="heading-md" style="font-size: 18px;">The Problem</h4>
+                            <p class="card-text">Modern smart displays are cluttered with ads, notifications and voice assistants. They demand attention rather than providing it calmly when needed.</p>
+                        </div>
+                        <div>
+                            <h4 class="heading-md" style="font-size: 18px;">Our Solution</h4>
+                            <p class="card-text">Minimalist e-ink and LED displays that show exactly what you need — train times, weather, calendar events — without distraction, privacy invasion or subscription fees.</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Real-time transport information
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Local weather and forecasts
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Calendar integration
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            No ads, no voice assistant, no subscriptions
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Low power consumption
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="btn btn-primary">
+                        Join the pilot
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+                
+                <div class="product-graphic display md:order-1">
+                    <div style="background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 200px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                            <span style="font-size: 10px; color: #94a3b8;">LIVE</span>
+                        </div>
+                        <div style="background: #f8fafc; border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                            <p style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">Next train</p>
+                            <p style="font-family: Outfit; font-size: 16px; font-weight: 600; color: #0f172a;">Victoria • 4 min</p>
+                        </div>
+                        <div style="background: #f8fafc; border-radius: 8px; padding: 12px;">
+                            <p style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">Weather</p>
+                            <p style="font-family: Outfit; font-size: 16px; font-weight: 600; color: #0f172a;">14°C • Cloudy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Devices Section -->
+    <section id="sports" class="product-section">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-12">
+                <div>
+                    <span class="badge mb-4">In development</span>
+                    <h2 class="heading-lg">Sports Performance Devices</h2>
+                    <p class="text-lg mb-6" style="color: var(--primary); font-weight: 500;">Professional-grade tracking at grassroots prices</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div>
+                            <h4 class="heading-md" style="font-size: 18px;">The Problem</h4>
+                            <p class="card-text">Cricket coaches and players want data-driven training, but professional speed tracking equipment costs thousands. Grassroots clubs and amateur players are priced out.</p>
+                        </div>
+                        <div>
+                            <h4 class="heading-md" style="font-size: 18px;">Our Solution</h4>
+                            <p class="card-text">Affordable, accurate ball speed tracking hardware that works straight out of the box. Track bowling speeds, monitor progress over time, and coach with real data.</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="feature-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Accurate ball speed measurement
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Session history and progress tracking
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Works with any smartphone
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Designed for outdoor use
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Affordable for clubs and individuals
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="btn btn-primary">
+                        Join the pilot
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+                
+                <div class="product-graphic sports">
+                    <div style="background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); text-align: center;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" style="margin-bottom: 12px;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        <p style="font-size: 12px; color: #94a3b8; margin-bottom: 4px;">Ball Speed</p>
+                        <p style="font-family: Outfit; font-size: 36px; font-weight: 700; color: #0f172a;">82 <span style="font-size: 16px; font-weight: 400; color: #94a3b8;">mph</span></p>
+                        <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #e2e8f0;">
+                            <p style="font-size: 12px; color: #10b981; font-weight: 500;">+5% vs last session</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section section-alt">
+        <div class="container text-center">
+            <h2 class="heading-lg">Interested in early access?</h2>
+            <p class="text-lg max-w-2xl mx-auto mb-10">We're onboarding pilot users across all product lines. Join us and help shape products that work for real people.</p>
+            <a href="contact.html" class="btn btn-primary">
+                Get in touch
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-6" style="display: inline-block;">
+                        <svg viewBox="0 0 140 40" width="140" height="40">
+                            <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                            <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                            <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                        </svg>
+                    </a>
+                    <p>Smart connected technology for everyday life and a sustainable future. Designed & built in the UK.</p>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>United Kingdom</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:hello@xtrec.co.uk">hello@xtrec.co.uk</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#carbon">Carbon Platform</a></li>
+                        <li><a href="products.html#displays">Ambient Displays</a></li>
+                        <li><a href="products.html#sports">Sports Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Xtrec Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
