@@ -1,0 +1,170 @@
+{
+  "total_tests": 9,
+  "passed_tests": 9,
+  "success_rate": 100.0,
+  "results": [
+    {
+      "test": "API Root",
+      "endpoint": "/",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response": "{\"message\":\"Xtrec API - Smart connected technology\"}",
+      "response_json": {
+        "message": "Xtrec API - Smart connected technology"
+      }
+    },
+    {
+      "test": "Contact Form Submission",
+      "endpoint": "/contact",
+      "method": "POST",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response": "{\"id\":\"f373a4f2-0981-4675-87c4-2ad680003b14\",\"name\":\"Test User\",\"email\":\"test@example.com\",\"interest\":\"carbon-platform\",\"message\":\"This is a test message from automated testing\",\"timestamp\":\"2026-02-10T09:21:15.286759Z\"}",
+      "response_json": {
+        "id": "f373a4f2-0981-4675-87c4-2ad680003b14",
+        "name": "Test User",
+        "email": "test@example.com",
+        "interest": "carbon-platform",
+        "message": "This is a test message from automated testing",
+        "timestamp": "2026-02-10T09:21:15.286759Z"
+      }
+    },
+    {
+      "test": "Contact Form (Invalid Data)",
+      "endpoint": "/contact",
+      "method": "POST",
+      "expected_status": 422,
+      "actual_status": 422,
+      "success": true,
+      "response": "{\"detail\":[{\"type\":\"value_error\",\"loc\":[\"body\",\"email\"],\"msg\":\"value is not a valid email address: An email address must have an @-sign.\",\"input\":\"invalid-email\",\"ctx\":{\"reason\":\"An email address must have an @-sign.\"}}]}",
+      "response_json": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "email"
+            ],
+            "msg": "value is not a valid email address: An email address must have an @-sign.",
+            "input": "invalid-email",
+            "ctx": {
+              "reason": "An email address must have an @-sign."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Pilot Signup (New Email)",
+      "endpoint": "/pilot-signup",
+      "method": "POST",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response": "{\"id\":\"1d704e0e-a9f7-473d-b4e8-81b9765448da\",\"email\":\"pilot.test.092115@example.com\",\"interest\":\"ambient-displays\",\"timestamp\":\"2026-02-10T09:21:15.671178Z\"}",
+      "response_json": {
+        "id": "1d704e0e-a9f7-473d-b4e8-81b9765448da",
+        "email": "pilot.test.092115@example.com",
+        "interest": "ambient-displays",
+        "timestamp": "2026-02-10T09:21:15.671178Z"
+      }
+    },
+    {
+      "test": "Pilot Signup (First)",
+      "endpoint": "/pilot-signup",
+      "method": "POST",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response": "{\"id\":\"6133809b-c240-4bd7-be63-837f488b9738\",\"email\":\"duplicate@example.com\",\"interest\":\"sports-devices\",\"timestamp\":\"2026-02-10T09:21:15.948050Z\"}",
+      "response_json": {
+        "id": "6133809b-c240-4bd7-be63-837f488b9738",
+        "email": "duplicate@example.com",
+        "interest": "sports-devices",
+        "timestamp": "2026-02-10T09:21:15.948050Z"
+      }
+    },
+    {
+      "test": "Pilot Signup (Duplicate - Should Fail)",
+      "endpoint": "/pilot-signup",
+      "method": "POST",
+      "expected_status": 400,
+      "actual_status": 400,
+      "success": true,
+      "response": "{\"detail\":\"Email already registered for pilot programme\"}",
+      "response_json": {
+        "detail": "Email already registered for pilot programme"
+      }
+    },
+    {
+      "test": "Pilot Signup (Invalid Data)",
+      "endpoint": "/pilot-signup",
+      "method": "POST",
+      "expected_status": 422,
+      "actual_status": 422,
+      "success": true,
+      "response": "{\"detail\":[{\"type\":\"value_error\",\"loc\":[\"body\",\"email\"],\"msg\":\"value is not a valid email address: An email address must have an @-sign.\",\"input\":\"not-an-email\",\"ctx\":{\"reason\":\"An email address must have an @-sign.\"}}]}",
+      "response_json": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "email"
+            ],
+            "msg": "value is not a valid email address: An email address must have an @-sign.",
+            "input": "not-an-email",
+            "ctx": {
+              "reason": "An email address must have an @-sign."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Get Contact Submissions",
+      "endpoint": "/contacts",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response": "[{\"id\":\"f373a4f2-0981-4675-87c4-2ad680003b14\",\"name\":\"Test User\",\"email\":\"test@example.com\",\"interest\":\"carbon-platform\",\"message\":\"This is a test message from automated testing\",\"timestamp\":\"2026-02-10T09:21:15.286759Z\"}]",
+      "response_json": [
+        {
+          "id": "f373a4f2-0981-4675-87c4-2ad680003b14",
+          "name": "Test User",
+          "email": "test@example.com",
+          "interest": "carbon-platform",
+          "message": "This is a test message from automated testing",
+          "timestamp": "2026-02-10T09:21:15.286759Z"
+        }
+      ]
+    },
+    {
+      "test": "Get Pilot Signups",
+      "endpoint": "/pilot-signups",
+      "method": "GET",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response": "[{\"id\":\"1d704e0e-a9f7-473d-b4e8-81b9765448da\",\"email\":\"pilot.test.092115@example.com\",\"interest\":\"ambient-displays\",\"timestamp\":\"2026-02-10T09:21:15.671178Z\"},{\"id\":\"6133809b-c240-4bd7-be63-837f488b9738\",\"email\":\"duplicate@example.com\",\"interest\":\"sports-devices\",\"timestamp\":\"2026-02-10T09:21:15.948050Z\"}]",
+      "response_json": [
+        {
+          "id": "1d704e0e-a9f7-473d-b4e8-81b9765448da",
+          "email": "pilot.test.092115@example.com",
+          "interest": "ambient-displays",
+          "timestamp": "2026-02-10T09:21:15.671178Z"
+        },
+        {
+          "id": "6133809b-c240-4bd7-be63-837f488b9738",
+          "email": "duplicate@example.com",
+          "interest": "sports-devices",
+          "timestamp": "2026-02-10T09:21:15.948050Z"
+        }
+      ]
+    }
+  ]
+}
