@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability - Xtrec</title>
+    <meta name="description" content="Xtrec is committed to sustainability - building technology that helps SMEs measure emissions and enables smarter everyday choices.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='28' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='20' cy='28' r='4' fill='%23002E5D'/%3E%3Cline x1='12' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3Cline x1='28' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 140 40" width="140" height="40">
+                    <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                    <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                    <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="platform.html">Platform</a></li>
+                <li><a href="sustainability.html" class="active">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Join Pilot</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="products.html">Products</a>
+        <a href="platform.html">Platform</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px; width: 100%;">Join Pilot Programme</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 768px;">
+                <span class="badge badge-green mb-4">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    Sustainability at the core
+                </span>
+                <h1 class="heading-xl">Technology for a net-zero future</h1>
+                <p class="text-lg mb-8">Sustainability isn't an afterthought at Xtrec — it's fundamental to why we exist. We build products that help people and businesses reduce their environmental impact while making smarter everyday choices.</p>
+                <a href="products.html#carbon" class="btn btn-primary">
+                    Explore Carbon Platform
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section-alt" style="padding: 64px 0;">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4z"></path></svg>
+                    </div>
+                    <p class="stat-value">99%</p>
+                    <p class="stat-label">of UK businesses are SMEs</p>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <p class="stat-value">50%</p>
+                    <p class="stat-label">of SME emissions are unmeasured</p>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <p class="stat-value">2050</p>
+                    <p class="stat-label">UK net-zero target year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-12">
+                <div>
+                    <p class="label" style="color: #10b981;">Our Mission</p>
+                    <h2 class="heading-lg">Enabling SMEs to measure, understand and reduce emissions</h2>
+                    <p class="text-lg mb-6">The UK has committed to net-zero by 2050, but small and medium businesses — which make up 99% of all UK businesses — often lack the tools and resources to measure and report their carbon footprint accurately.</p>
+                    <p class="text-lg">Our Carbon Measurement Platform is designed specifically for SMEs: affordable, automated, and accurate. We connect to existing financial systems and add real-world energy measurement through smart sensors.</p>
+                </div>
+                
+                <div style="background: #ecfdf5; border-radius: 24px; padding: 32px;">
+                    <h3 class="heading-md mb-8">What we measure</h3>
+                    <div class="space-y-6">
+                        <div class="scope-card">
+                            <div class="scope-indicator">
+                                <span class="scope-dot"></span>
+                                <h4 class="scope-title">Scope 1 — Direct Emissions</h4>
+                            </div>
+                            <p class="scope-text">On-site fuel combustion, company vehicles, refrigerants</p>
+                        </div>
+                        
+                        <div class="scope-card">
+                            <div class="scope-indicator">
+                                <span class="scope-dot scope-2"></span>
+                                <h4 class="scope-title">Scope 2 — Energy Emissions</h4>
+                            </div>
+                            <p class="scope-text">Purchased electricity, heating, cooling</p>
+                        </div>
+                        
+                        <div class="scope-card">
+                            <div class="scope-indicator">
+                                <span class="scope-dot scope-3"></span>
+                                <h4 class="scope-title">Scope 3 — Value Chain Emissions</h4>
+                            </div>
+                            <p class="scope-text">Business travel, purchased goods, waste disposal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center mb-16">
+                <p class="label" style="color: #10b981;">Our Approach</p>
+                <h2 class="heading-lg">Sustainability through technology</h2>
+            </div>
+            
+            <div class="grid grid-2 gap-12 max-w-4xl mx-auto">
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <div>
+                        <h3 class="pillar-title">Measure accurately</h3>
+                        <p class="pillar-text">Automated data collection from financial systems combined with real-world energy sensors eliminates guesswork and manual data entry.</p>
+                    </div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="pillar-title">Report confidently</h3>
+                        <p class="pillar-text">Generate compliant emissions reports for stakeholders, investors and regulatory requirements without specialist expertise.</p>
+                    </div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <div>
+                        <h3 class="pillar-title">Build efficient products</h3>
+                        <p class="pillar-text">All Xtrec devices are designed for minimal power consumption, using energy-efficient components and intelligent sleep modes.</p>
+                    </div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="pillar-title">Enable better choices</h3>
+                        <p class="pillar-text">Our ambient displays help households and offices make smarter transport and energy decisions through real-time information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment Section -->
+    <section class="section">
+        <div class="container text-center">
+            <p class="label">Our Commitment</p>
+            <h2 class="heading-lg mb-8">Walking the talk</h2>
+            
+            <div class="commitment-list max-w-3xl mx-auto">
+                <ul>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        UK-based manufacturing to minimise shipping emissions
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        Low-power device design as standard across all products
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        Recyclable and minimal packaging
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        Cloud infrastructure powered by renewable energy
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        Carbon reporting on our own operations (when scaling)
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        Supporting SMEs to meet their sustainability goals
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container text-center">
+            <h2 class="heading-lg" style="color: white;">Ready to measure your carbon footprint?</h2>
+            <p class="text-lg mb-10 max-w-2xl mx-auto">Join our pilot programme and be among the first SMEs to use our automated carbon measurement platform.</p>
+            <a href="contact.html" class="btn btn-white">
+                Join the pilot
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-6" style="display: inline-block;">
+                        <svg viewBox="0 0 140 40" width="140" height="40">
+                            <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                            <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                            <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                        </svg>
+                    </a>
+                    <p>Smart connected technology for everyday life and a sustainable future. Designed & built in the UK.</p>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>United Kingdom</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:hello@xtrec.co.uk">hello@xtrec.co.uk</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#carbon">Carbon Platform</a></li>
+                        <li><a href="products.html#displays">Ambient Displays</a></li>
+                        <li><a href="products.html#sports">Sports Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Xtrec Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
