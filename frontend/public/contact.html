@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Xtrec</title>
+    <meta name="description" content="Get in touch with Xtrec. Join our pilot programme or explore partnership opportunities.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='28' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='20' cy='28' r='4' fill='%23002E5D'/%3E%3Cline x1='12' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3Cline x1='28' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 140 40" width="140" height="40">
+                    <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                    <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                    <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="platform.html">Platform</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Join Pilot</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="products.html">Products</a>
+        <a href="platform.html">Platform</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px; width: 100%;">Join Pilot Programme</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 672px;">
+                <p class="label">Contact Us</p>
+                <h1 class="heading-xl">Let's talk</h1>
+                <p class="text-lg">Whether you're interested in joining our pilot programme, exploring partnership opportunities, or just want to learn more — we'd love to hear from you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="section section-alt" style="padding-top: 64px;">
+        <div class="container">
+            <div class="grid grid-2 gap-12">
+                <!-- Form -->
+                <div class="card" style="padding: 32px;">
+                    <h2 class="heading-md mb-8">Get in touch</h2>
+                    
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="interest">I'm interested in <span class="required">*</span></label>
+                            <select id="interest" name="interest" class="form-select" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="carbon-platform">Carbon Measurement Platform</option>
+                                <option value="ambient-displays">Smart Ambient Displays</option>
+                                <option value="sports-devices">Sports Performance Devices</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="general">General Enquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message <span style="font-weight: 400; color: var(--text-muted);">(optional)</span></label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us more about your interest..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message (hidden by default) -->
+                    <div id="successMessage" style="display: none; text-align: center; padding: 48px 24px;">
+                        <div style="width: 64px; height: 64px; background: #ecfdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h3 class="heading-md">Thank you for reaching out</h3>
+                        <p class="card-text mb-6">We've received your message and will get back to you shortly.</p>
+                        <button onclick="resetForm()" class="btn btn-outline">Send another message</button>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="heading-md mb-6">Other ways to reach us</h3>
+                        <div class="space-y-6">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Email</p>
+                                    <p class="contact-info-value"><a href="mailto:hello@xtrec.co.uk">hello@xtrec.co.uk</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Location</p>
+                                    <p class="contact-info-value">United Kingdom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- What happens next -->
+                    <div class="info-box">
+                        <h4 class="info-box-title">What happens next?</h4>
+                        <ol class="steps-list">
+                            <li>
+                                <span class="step-number">1</span>
+                                <span>We'll review your message and get back within 2 business days</span>
+                            </li>
+                            <li>
+                                <span class="step-number">2</span>
+                                <span>If you're joining the pilot, we'll share next steps and timeline</span>
+                            </li>
+                            <li>
+                                <span class="step-number">3</span>
+                                <span>For partnerships, we'll arrange a call to discuss opportunities</span>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <!-- Pilot Programme -->
+                    <div class="info-box info-box-alt">
+                        <h4 class="info-box-title">Pilot Programme</h4>
+                        <p class="card-text mb-4">We're actively onboarding pilot users across all product lines. As a pilot user, you'll get:</p>
+                        <ul class="info-box-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Early access to products in development
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Direct input into product features
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Preferential pricing when products launch
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-6" style="display: inline-block;">
+                        <svg viewBox="0 0 140 40" width="140" height="40">
+                            <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                            <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                            <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                        </svg>
+                    </a>
+                    <p>Smart connected technology for everyday life and a sustainable future. Designed & built in the UK.</p>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>United Kingdom</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:hello@xtrec.co.uk">hello@xtrec.co.uk</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#carbon">Carbon Platform</a></li>
+                        <li><a href="products.html#displays">Ambient Displays</a></li>
+                        <li><a href="products.html#sports">Sports Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Xtrec Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+        
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+        
+        function resetForm() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('contactForm').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

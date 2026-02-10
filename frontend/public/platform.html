@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform - Xtrec</title>
+    <meta name="description" content="Xtrec's shared IoT platform powers all our connected devices with scalable cloud infrastructure and UK manufacturing capability.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='28' cy='12' r='4' fill='%23002E5D'/%3E%3Ccircle cx='20' cy='28' r='4' fill='%23002E5D'/%3E%3Cline x1='12' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3Cline x1='28' y1='12' x2='20' y2='28' stroke='%23002E5D' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 140 40" width="140" height="40">
+                    <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                    <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                    <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                    <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                    <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="platform.html" class="active">Platform</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Join Pilot</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="products.html">Products</a>
+        <a href="platform.html">Platform</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px; width: 100%;">Join Pilot Programme</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-12">
+                <div>
+                    <p class="label">Platform & Innovation</p>
+                    <h1 class="heading-xl">One platform, multiple products</h1>
+                    <p class="text-lg mb-8">Xtrec is building a shared IoT hardware and cloud software platform that powers all our devices. This approach reduces cost, improves reliability, and accelerates innovation across product lines.</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        Partner with us
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+                
+                <!-- Platform Diagram -->
+                <div class="platform-diagram">
+                    <!-- Central hub -->
+                    <div class="platform-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        <span>PLATFORM</span>
+                    </div>
+                    
+                    <!-- Connected nodes -->
+                    <div class="platform-node platform-node-top">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                    </div>
+                    <div class="platform-node platform-node-left">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <div class="platform-node platform-node-right">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Benefits -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center mb-16">
+                <p class="label">Platform Advantages</p>
+                <h2 class="heading-lg">Why a shared platform matters</h2>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h3 class="card-title">Faster Innovation</h3>
+                    <p class="card-text">New products can leverage existing firmware, cloud infrastructure and manufacturing relationships — cutting development time significantly.</p>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                    </div>
+                    <h3 class="card-title">Continuous Improvement</h3>
+                    <p class="card-text">Updates to the core platform benefit all products simultaneously. Bug fixes and security patches roll out across the entire product range.</p>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="card-title">Proven Reliability</h3>
+                    <p class="card-text">Each new product benefits from battle-tested components and infrastructure that have been refined through real-world use.</p>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line></svg>
+                    </div>
+                    <h3 class="card-title">Shared Hardware</h3>
+                    <p class="card-text">Common microcontrollers, sensors and connectivity modules reduce component costs and simplify supply chain management.</p>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                    </div>
+                    <h3 class="card-title">Unified Cloud</h3>
+                    <p class="card-text">A single cloud backend handles device management, data storage and user authentication across all product lines.</p>
+                </div>
+                
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3 class="card-title">UK Manufacturing</h3>
+                    <p class="card-text">Established relationships with UK-based manufacturers enable rapid prototyping and local production for all products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-12">
+                <div>
+                    <p class="label">Technical Foundation</p>
+                    <h2 class="heading-lg">Built on solid foundations</h2>
+                    
+                    <div class="space-y-6 mt-8">
+                        <div class="tech-layer">
+                            <h4 class="tech-layer-title">Hardware Layer</h4>
+                            <p class="tech-layer-text">Low-power microcontrollers with WiFi connectivity, designed for reliability and long-term support. Modular sensor interfaces for product-specific needs.</p>
+                        </div>
+                        
+                        <div class="tech-layer layer-2">
+                            <h4 class="tech-layer-title">Firmware Layer</h4>
+                            <p class="tech-layer-text">Secure over-the-air updates, efficient power management, and robust connectivity handling. Shared codebase with product-specific configurations.</p>
+                        </div>
+                        
+                        <div class="tech-layer layer-3">
+                            <h4 class="tech-layer-title">Cloud Layer</h4>
+                            <p class="tech-layer-text">Scalable backend infrastructure handling device provisioning, data ingestion, user management and API access. Built for reliability and data privacy.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capabilities-list">
+                    <h3 class="heading-md mb-6">Platform Capabilities</h3>
+                    <ul>
+                        <li><span class="dot"></span> Secure device provisioning & authentication</li>
+                        <li><span class="dot"></span> Over-the-air firmware updates</li>
+                        <li><span class="dot"></span> Real-time data ingestion & processing</li>
+                        <li><span class="dot"></span> User management & access control</li>
+                        <li><span class="dot"></span> RESTful APIs for third-party integration</li>
+                        <li><span class="dot"></span> GDPR-compliant data handling</li>
+                        <li><span class="dot"></span> Scalable to millions of devices</li>
+                        <li><span class="dot"></span> UK-hosted infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership CTA -->
+    <section class="section section-dark">
+        <div class="container text-center">
+            <h2 class="heading-lg" style="color: white;">Looking to build connected products?</h2>
+            <p class="text-lg mb-10 max-w-2xl mx-auto">We're open to partnerships with organisations looking to leverage our platform for their own IoT initiatives.</p>
+            <a href="contact.html" class="btn btn-white">
+                Discuss partnership
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo mb-6" style="display: inline-block;">
+                        <svg viewBox="0 0 140 40" width="140" height="40">
+                            <circle cx="12" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="28" cy="12" r="4" fill="#002E5D"/>
+                            <circle cx="20" cy="28" r="4" fill="#002E5D"/>
+                            <line x1="12" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="28" y1="12" x2="20" y2="28" stroke="#002E5D" stroke-width="2"/>
+                            <line x1="12" y1="12" x2="28" y2="12" stroke="#002E5D" stroke-width="2" opacity="0.5"/>
+                            <text x="44" y="27" font-family="Outfit, sans-serif" font-size="22" font-weight="600" fill="#002E5D">Xtrec</text>
+                        </svg>
+                    </a>
+                    <p>Smart connected technology for everyday life and a sustainable future. Designed & built in the UK.</p>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>United Kingdom</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:hello@xtrec.co.uk">hello@xtrec.co.uk</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#carbon">Carbon Platform</a></li>
+                        <li><a href="products.html#displays">Ambient Displays</a></li>
+                        <li><a href="products.html#sports">Sports Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Xtrec Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
