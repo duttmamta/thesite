@@ -109,21 +109,6 @@ async def submit_contact(input: ContactSubmissionCreate):
     
     # Send email notification
     try:
-        html_content = f"""
-        <html>
-        <body style="font-family: Arial, sans-serif; padding: 20px; color: #0F172A;">
-            <h2 style="color: #002E5D;">New Contact Form Submission - Xtrec</h2>
-            <hr style="border: 1px solid #E2E8F0;">
-            <p><strong>Name:</strong> {input.name}</p>
-            <p><strong>Email:</strong> {input.email}</p>
-            <p><strong>Interest:</strong> {input.interest}</p>
-            <p><strong>Message:</strong> {input.message or 'No message provided'}</p>
-            <hr style="border: 1px solid #E2E8F0;">
-            <p style="color: #64748B; font-size: 12px;">Submitted at: {doc['timestamp']}</p>
-        </body>
-        </html>
-        """
-        
         params = {
             "from": SENDER_EMAIL,
             "to": [input.email],
