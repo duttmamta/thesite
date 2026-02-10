@@ -113,14 +113,14 @@ export const HomePage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <p className="text-sm font-medium tracking-wide uppercase text-[#002E5D] mb-4">
-                UK Technology Company
+                UK-based Connected Technology Company
               </p>
               <h1 
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-slate-900 mb-6"
                 style={{ fontFamily: 'Outfit, sans-serif' }}
                 data-testid="hero-headline"
               >
-                Smart connected technology for everyday life
+                Smart connected technology for everyday life — and a sustainable future.
               </h1>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8 max-w-lg">
                 Xtrec builds focused hardware and software products — from automated carbon reporting 
@@ -148,16 +148,64 @@ export const HomePage = () => {
               </div>
             </div>
             
-            {/* Abstract Hero Visual */}
+            {/* Product Silhouettes Schematic */}
             <div className="relative animate-fade-in-up animation-delay-200">
-              <div className="aspect-square max-w-lg mx-auto relative">
-                <div className="absolute inset-0 bg-slate-50 rounded-3xl" />
-                <div className="absolute top-8 left-8 w-32 h-32 border-2 border-[#002E5D]/20 rounded-full" />
-                <div className="absolute bottom-12 right-12 w-24 h-24 bg-[#002E5D]/10 rounded-2xl rotate-12" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-2 border-[#002E5D]/30 rounded-full" />
-                <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#002E5D] rounded-full" />
-                <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-[#002E5D]/60 rounded-full" />
-                <div className="absolute top-1/4 left-1/3 w-2 h-2 bg-[#002E5D]/40 rounded-full" />
+              <div className="aspect-square max-w-lg mx-auto relative bg-slate-50 rounded-3xl p-8">
+                {/* Carbon Platform - Globe with data nodes */}
+                <div className="absolute top-8 left-8 w-28 h-28">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#002E5D" strokeWidth="1.5" strokeDasharray="4 2" />
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#002E5D" strokeWidth="1" opacity="0.5" />
+                    <circle cx="50" cy="20" r="4" fill="#002E5D" opacity="0.7" />
+                    <circle cx="75" cy="60" r="4" fill="#002E5D" opacity="0.7" />
+                    <circle cx="25" cy="60" r="4" fill="#002E5D" opacity="0.7" />
+                    <line x1="50" y1="24" x2="50" y2="50" stroke="#002E5D" strokeWidth="1" opacity="0.4" />
+                    <line x1="71" y1="58" x2="50" y2="50" stroke="#002E5D" strokeWidth="1" opacity="0.4" />
+                    <line x1="29" y1="58" x2="50" y2="50" stroke="#002E5D" strokeWidth="1" opacity="0.4" />
+                  </svg>
+                  <p className="text-[10px] text-slate-500 text-center mt-1 font-medium">Carbon Platform</p>
+                </div>
+
+                {/* Ambient Display - Screen silhouette */}
+                <div className="absolute top-8 right-8 w-28 h-28">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <rect x="15" y="20" width="70" height="45" rx="3" fill="none" stroke="#002E5D" strokeWidth="1.5" />
+                    <rect x="20" y="25" width="25" height="8" rx="1" fill="#002E5D" opacity="0.2" />
+                    <rect x="20" y="36" width="18" height="6" rx="1" fill="#002E5D" opacity="0.15" />
+                    <rect x="55" y="25" width="25" height="16" rx="1" fill="#002E5D" opacity="0.1" />
+                    <line x1="50" y1="65" x2="50" y2="75" stroke="#002E5D" strokeWidth="1.5" />
+                    <line x1="35" y1="75" x2="65" y2="75" stroke="#002E5D" strokeWidth="1.5" />
+                  </svg>
+                  <p className="text-[10px] text-slate-500 text-center mt-1 font-medium">Ambient Display</p>
+                </div>
+
+                {/* Sports Device - Speed radar */}
+                <div className="absolute bottom-16 left-1/2 -translate-x-1/2 w-32 h-32">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <path d="M 50 80 A 35 35 0 0 1 15 45" fill="none" stroke="#002E5D" strokeWidth="1.5" strokeDasharray="3 2" />
+                    <path d="M 50 80 A 28 28 0 0 1 22 52" fill="none" stroke="#002E5D" strokeWidth="1" opacity="0.6" />
+                    <path d="M 50 80 A 20 20 0 0 1 30 60" fill="none" stroke="#002E5D" strokeWidth="1" opacity="0.4" />
+                    <circle cx="50" cy="80" r="6" fill="#002E5D" />
+                    <line x1="50" y1="74" x2="35" y2="50" stroke="#002E5D" strokeWidth="2" />
+                    <text x="60" y="45" fontSize="12" fill="#002E5D" fontFamily="Outfit" fontWeight="600">82</text>
+                    <text x="60" y="55" fontSize="8" fill="#002E5D" opacity="0.6">mph</text>
+                  </svg>
+                  <p className="text-[10px] text-slate-500 text-center mt-1 font-medium">Speed Tracker</p>
+                </div>
+
+                {/* Connection lines between products */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 400">
+                  <line x1="120" y1="130" x2="200" y2="260" stroke="#002E5D" strokeWidth="1" strokeDasharray="4 4" opacity="0.2" />
+                  <line x1="280" y1="130" x2="200" y2="260" stroke="#002E5D" strokeWidth="1" strokeDasharray="4 4" opacity="0.2" />
+                  <line x1="120" y1="100" x2="280" y2="100" stroke="#002E5D" strokeWidth="1" strokeDasharray="4 4" opacity="0.15" />
+                </svg>
+
+                {/* Central platform indicator */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-4">
+                  <div className="w-16 h-16 rounded-xl border-2 border-[#002E5D]/30 flex items-center justify-center bg-white/50">
+                    <span className="text-[10px] font-semibold text-[#002E5D] text-center leading-tight">Xtrec<br/>Platform</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
